@@ -35,11 +35,11 @@ def script_to_html(filename, output_filename):
 if __name__ == "__main__":
 
 	if len(sys.argv) < 3:
-		print "Usage: %s <ansi_file> <output_file>" % sys.argv[0]
+		print("Usage: %s <ansi_file> <output_file>" % sys.argv[0])
 		exit(1)
 
 	if os.path.exists(sys.argv[1]):
 		script_to_html(sys.argv[1], sys.argv[2])
-		print "OK"
+		print ("OK")
 	else:
-		print "File does not exist"
+		print ("File does not exist")

@@ -16,15 +16,15 @@ config.AUDIT_FOLDER = os.path.expanduser(os.path.expandvars(config.AUDIT_FOLDER)
 
 
 def log_info(logstr):
-    print termcolor.colored('[+] ' + logstr, 'green')
+    print (termcolor.colored('[+] ' + logstr, 'green'))
 
 
 def log_warning(logstr):
-    print termcolor.colored('[!] ' + logstr, 'yellow')
+    print (termcolor.colored('[!] ' + logstr, 'yellow'))
 
 
 def log_error(logstr):
-    print termcolor.colored('[X] ' + logstr, 'red')
+    print (termcolor.colored('[X] ' + logstr, 'red'))
 
 
 def get_xdisplay():
